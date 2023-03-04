@@ -2,34 +2,34 @@
 ## 1.1 Launching an AWS Instance
 Firstly, click on the `Launch instance` button to start the process of launching a new instance. And name that instance link `Jenkins`.
 
-<img src="./assets/Screenshot (76).png" alt="" width="400" />
+<img src="./assets/Screenshot (76).png" alt="" width="600" />
 
 <br/>
 
 Choose the Amazon Machine Image (AMI) that you want to use for your instance. This will typically be the operating system you want to use (Ubuntu).
 
-<img src="./assets/Screenshot (77).png" alt="" width="400" />
+<img src="./assets/Screenshot (77).png" alt="" width="600" />
 
 <br/>
 
 Configure additional details such as the key pair settings and security group (Network) settings.
 
-<img src="./assets/Screenshot (78).png" alt="" width="400" />
-<img src="./assets/Screenshot (79).png" alt="" width="400" />
+<img src="./assets/Screenshot (78).png" alt="" width="600" />
+<img src="./assets/Screenshot (79).png" alt="" width="600" />
 
 <br/>
 
 Review all settings and click the `Launch` button to create an instance.
 Once your instance is launched, it can be connect using a remote desktop or SSH client and start configuring  software and applications.
 
-<img src="./assets/Screenshot (82).png" alt="" width="400" />
+<img src="./assets/Screenshot (82).png" alt="" width="600" />
 
 <br/>
 
 ## 1.2 Adding Jenkins Port to AWS Instance
 Select the `Jenkins` instance that you want to add Jenkins port to. Click on the `Security` tab in the details pane at the bottom of the screen. Under `Security details` menu click on the `Security group` link.
 
-<img src="./assets/Screenshot (83).png" alt="" width="400" />
+<img src="./assets/Screenshot (83).png" alt="" width="600" />
 
 <br/>
 
@@ -40,8 +40,8 @@ Inside `Edit inbound rules` section Click on the `Add rule` button to create a n
 Select `Custom TCP` rule from the `Type` dropdown menu and enter `8080` as the `Port range`. Then Select `Anywhere` (or a specific IP range) as the `Source` to allow access from any IP address or a specific range of IP addresses.
 Finally, click on the `Save rules` button to apply the changes.
 
-<img src="./assets/Screenshot (84).png" alt="" width="400" />
-<img src="./assets/Screenshot (85).png" alt="" width="400" />
+<img src="./assets/Screenshot (84).png" alt="" width="600" />
+<img src="./assets/Screenshot (85).png" alt="" width="600" />
 
 <br/>
 <br/>
